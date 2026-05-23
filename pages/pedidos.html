@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pedidos | Chico's Burguer</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/pedidos.css" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="../assets/images/logo.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--  TOP BAR  -->
+    <div class="top_bar">
+      <div class="top_bar_content">
+        <span><i class="fa fa-phone"></i> (11) 99999-9999</span>
+        <span><i class="fa fa-clock-o"></i> Seg a Dom: 18h às 23h</span>
+        <span
+          ><i class="fa fa-map-marker"></i> Av. dos Sabores, 1000 - Santo
+          André/SP</span
+        >
+      </div>
+    </div>
+
+    <!--  HEADER / NAV  -->
+    <header>
+      <div class="divHeader">
+        <<a href="../index.html">
+          <img
+            src="../assets/images/logo.png"
+            alt="Chico's Burguer"
+            title="Chico's Burguer"
+            class="logo"
+          />
+        </a>
+
+        <button id="hamburger" class="hamburger" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav id="mainNav">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="pedidos.html" class="active">Pedidos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <h1 class="title_default">Pedidos</h1>
+      <p class="subtitle_default">Gerencie os pedidos do dia</p>
+
+      <section class="conteiner">
+        <!-- Campo de filtragem -->
+        <div class="filter_bar">
+          <label for="filtrar-tabela"
+            ><i class="fa fa-search"></i> Buscar pedido:</label
+          >
+          <input
+            type="text"
+            id="filtrar-tabela"
+            class="filtrar-tabela"
+            placeholder="Digite o nome do cliente"
+          />
+          <span class="dica"
+            >Dica: dê <b>duplo clique</b> em uma linha para apagar o
+            pedido</span
+          >
+        </div>
+
+        <div class="table_wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Cliente</th>
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Valor Unitário</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody id="tabela-clientes">
+              <tr class="clientes">
+                <td class="nome">João Silva</td>
+                <td class="servico">Chico Classic</td>
+                <td class="qtd">2</td>
+                <td class="unitario">32.90</td>
+                <td class="total"></td>
+              </tr>
+              <tr class="clientes">
+                <td class="nome">Maria Souza</td>
+                <td class="servico">Bacon Lover</td>
+                <td class="qtd">1</td>
+                <td class="unitario">38.90</td>
+                <td class="total"></td>
+              </tr>
+              <tr class="clientes">
+                <td class="nome">Pedro Santos</td>
+                <td class="servico">Cheddar Bomb</td>
+                <td class="qtd">3</td>
+                <td class="unitario">36.90</td>
+                <td class="total"></td>
+              </tr>
+              <tr class="clientes">
+                <td class="nome">Ana Oliveira</td>
+                <td class="servico">Smash Duplo</td>
+                <td class="qtd">2</td>
+                <td class="unitario">34.90</td>
+                <td class="total"></td>
+              </tr>
+              <tr class="clientes">
+                <td class="nome">Carlos Mendes</td>
+                <td class="servico">Veggie Power</td>
+                <td class="qtd">1</td>
+                <td class="unitario">31.90</td>
+                <td class="total"></td>
+              </tr>
+              <tr class="clientes">
+                <td class="nome">Beatriz Lima</td>
+                <td class="servico">Chico Premium</td>
+                <td class="qtd">2</td>
+                <td class="unitario">45.90</td>
+                <td class="total"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="form-pedido">
+        <h2 class="title_default" style="font-size: 26pt">
+          Adicionar Novo Pedido
+        </h2>
+
+        <form id="formulario-de-pedido">
+          <div class="bloco">
+            <div class="bloco_nome">
+              <label>Nome do cliente:</label>
+              <input
+                type="text"
+                id="nome"
+                required
+                placeholder="Digite o nome"
+              />
+            </div>
+
+            <div class="bloco_produto">
+              <label>Produto:</label>
+              <select id="servico">
+                <option value="">Selecione</option>
+                <option value="Chico Classic" data-preco="32.90">
+                  Chico Classic - R$ 32,90
+                </option>
+                <option value="Bacon Lover" data-preco="38.90">
+                  Bacon Lover - R$ 38,90
+                </option>
+                <option value="Cheddar Bomb" data-preco="36.90">
+                  Cheddar Bomb - R$ 36,90
+                </option>
+                <option value="Smash Duplo" data-preco="34.90">
+                  Smash Duplo - R$ 34,90
+                </option>
+                <option value="Veggie Power" data-preco="31.90">
+                  Veggie Power - R$ 31,90
+                </option>
+                <option value="Chico Premium" data-preco="45.90">
+                  Chico Premium - R$ 45,90
+                </option>
+              </select>
+            </div>
+
+            <div class="bloco_qtd">
+              <label>Quantidade:</label>
+              <input
+                type="number"
+                id="qtd"
+                min="1"
+                required
+                placeholder="Qtd"
+              />
+            </div>
+
+            <div class="bloco_unitario">
+              <label>Valor Unitário (R$):</label>
+              <input
+                type="number"
+                step="0.01"
+                id="unitario"
+                required
+                placeholder="0,00"
+              />
+            </div>
+          </div>
+
+          <button type="button" class="bt" id="adicionar">
+            <i class="fa fa-plus-circle"></i> Adicionar Pedido
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <!--  FAQ  -->
+    <section class="faq_section">
+      <h2 class="title_default">Perguntas Frequentes</h2>
+      <p class="subtitle_default">Tire suas dúvidas</p>
+
+      <div class="faq_container">
+        <div class="faq_item">
+          <button class="faq_question">
+            Como acompanho meu pedido? <span class="faq_icon">+</span>
+          </button>
+          <div class="faq_answer">
+            <p>
+              Após confirmar, enviamos atualizações pelo WhatsApp em cada etapa:
+              produção, saída e entrega.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq_item">
+          <button class="faq_question">
+            Qual a área de entrega? <span class="faq_icon">+</span>
+          </button>
+          <div class="faq_answer">
+            <p>
+              Entregamos em toda a região do ABC paulista. A taxa varia conforme
+              a distância do estabelecimento.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq_item">
+          <button class="faq_question">
+            Posso cancelar um pedido? <span class="faq_icon">+</span>
+          </button>
+          <div class="faq_answer">
+            <p>
+              Sim, desde que o pedido ainda não tenha entrado em produção. Entre
+              em contato imediatamente pelo WhatsApp.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  FOOTER  -->
+    <footer>
+      <div class="footer_content">
+        <div class="footer_col">
+          <h3 class="title_footer">Chico's Burguer</h3>
+          <p class="footer_text">
+            Hamburgueria gourmet em Santo André/SP. <br />
+            Sabor artesanal desde 2015.
+          </p>
+        </div>
+
+        <div class="footer_col">
+          <h3 class="title_footer">Contato</h3>
+          <ul class="contatos">
+            <li>
+              <i class="fa fa-whatsapp"></i>
+              <a href="https://wa.me/5511999999999">(11) 99999-9999</a>
+            </li>
+            <li>
+              <i class="fa fa-envelope"></i>
+              <a href="mailto:contato@chicosburguer.com.br"
+                >contato@chicosburguer.com.br</a
+              >
+            </li>
+            <li>
+              <i class="fa fa-instagram"></i>
+              <a href="https://instagram.com/chicosburguer">@chicosburguer</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer_col">
+          <h3 class="title_footer">Mais Informações</h3>
+          <ul class="contatos">
+            <li><i class="fa fa-map-marker"></i> Av. dos Sabores, 1000</li>
+            <li><i class="fa fa-clock-o"></i> Seg a Dom - 18h às 23h</li>
+            <li>
+              <a href="contato.html"
+                ><i class="fa fa-paper-plane"></i> Fale conosco</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer_bottom">
+        <p>
+          © 2026 Chico's Burguer - Hamburgueria Gourmet. Todos os direitos
+          reservados.
+        </p>
+      </div>
+    </footer>
+
+    <script src="../assets/js/base.js"></script>
+    <script src="../assets/js/faq.js"></script>
+    <script src="../assets/js/pedidos.js"></script>
+    <script src="../assets/js/adicionar_pedido.js"></script>
+    <script src="../assets/js/remover_pedido.js"></script>
+    <script src="../assets/js/buscar_pedido.js"></script>
+  </body>
+</html>

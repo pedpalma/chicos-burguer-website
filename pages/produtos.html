@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produtos | Chico's Burguer</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/produtos.css" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="../assets/images/logo.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--  TOP BAR  -->
+    <div class="top_bar">
+      <div class="top_bar_content">
+        <span><i class="fa fa-phone"></i> (11) 99999-9999</span>
+        <span><i class="fa fa-clock-o"></i> Seg a Dom: 18h às 23h</span>
+        <span
+          ><i class="fa fa-map-marker"></i> Av. dos Sabores, 1000 - Santo
+          André/SP</span
+        >
+      </div>
+    </div>
+
+    <!--  HEADER / NAV  -->
+    <header>
+      <div class="divHeader">
+        <a href="../index.html">
+          <img
+            src="../assets/images/logo.png"
+            alt="Chico's Burguer"
+            title="Chico's Burguer"
+            class="logo"
+          />
+        </a>
+
+        <button id="hamburger" class="hamburger" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav id="mainNav">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="produtos.html" class="active">Produtos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="pedidos.html">Pedidos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="produtos_header">
+        <h1 class="title_default">Nosso Cardápio</h1>
+        <p class="subtitle_default">Sabores artesanais que conquistam</p>
+      </section>
+
+      <!--  CARDS DE PRODUTOS  -->
+      <div class="produtos_container">
+        <!-- PRODUTO 1 - Chico Classic -->
+<div class="card_produto"
+  onclick="abrirDetalhes('Chico Classic', 'O burguer que deu origem a tudo. Blend artesanal 180g, queijo cheddar, alface americana, tomate, cebola roxa e o famoso molho da casa, no pão tostado na manteiga.', 'R$ 32,90', '../assets/images/x-salada.jpg')">
+  <img src="../assets/images/x-salada.jpg" alt="Chico Classic" class="card_img" />
+  <div class="card_info">
+    <h2>Chico Classic</h2>
+    <p class="descricao">Blend artesanal 180g, cheddar, alface, tomate, cebola roxa e molho da casa.</p>
+    <span class="preco">R$ 32,90</span>
+  </div>
+</div>
+
+<!-- PRODUTO 2 - Bacon Lover -->
+<div class="card_produto"
+  onclick="abrirDetalhes('Bacon Lover', 'Para os apaixonados por bacon! Burguer 180g no pão brioche, queijo derretido, cebola caramelizada na cerveja, bacon crocante e molho barbecue defumado.', 'R$ 38,90', '../assets/images/x-bacon.jpeg')">
+  <img src="../assets/images/x-bacon.jpeg" alt="Bacon Lover" class="card_img" />
+  <div class="card_info">
+    <h2>Bacon Lover</h2>
+    <p class="descricao">Burguer 180g no pão brioche, queijo derretido, cebola caramelizada e bacon crocante.</p>
+    <span class="preco">R$ 38,90</span>
+  </div>
+</div>
+
+<!-- PRODUTO 3 - Triple Cheese -->
+<div class="card_produto"
+  onclick="abrirDetalhes('Triple Cheese', 'Uma torre de sabor! Três carnes smash de 90g cada, intercaladas com fartas camadas de cheddar derretido no pão brioche dourado. Para os que não economizam no queijo.', 'R$ 49,90', '../assets/images/tres-carnes.jpg')">
+  <img src="../assets/images/tres-carnes.jpg" alt="Triple Cheese" class="card_img" />
+  <div class="card_info">
+    <h2>Triple Cheese</h2>
+    <p class="descricao">Três carnes smash de 90g intercaladas com fartas camadas de cheddar derretido.</p>
+    <span class="preco">R$ 49,90</span>
+  </div>
+</div>
+
+<!-- PRODUTO 4 - Smash Cebola -->
+<div class="card_produto"
+  onclick="abrirDetalhes('Smash Cebola', 'O queridinho dos clientes! Carne smash 180g, queijo prato, cebola caramelizada, dose generosa de bacon e molho da casa no pão brioche.', 'R$ 36,90', '../assets/images/burguer-com-cebola.jpeg')">
+  <img src="../assets/images/burguer-com-cebola.jpeg" alt="Smash Cebola" class="card_img" />
+  <div class="card_info">
+    <h2>Smash Cebola</h2>
+    <p class="descricao">Carne smash 180g, queijo prato, cebola caramelizada, bacon e molho da casa.</p>
+    <span class="preco">R$ 36,90</span>
+  </div>
+</div>
+
+<!-- PRODUTO 5 - Veggie Power -->
+<div class="card_produto"
+  onclick="abrirDetalhes('Veggie Power', 'Opção 100% vegetariana e cheia de sabor. Hambúrguer artesanal de grão-de-bico grelhado, cogumelos paris salteados na manteiga, rúcula fresca e maionese de ervas.', 'R$ 31,90', '../assets/images/cogumelo.jpg')">
+  <img src="../assets/images/cogumelo.jpg" alt="Veggie Power" class="card_img" />
+  <div class="card_info">
+    <h2>Veggie Power</h2>
+    <p class="descricao">Burguer de grão-de-bico, cogumelos paris salteados, rúcula e maionese de ervas.</p>
+    <span class="preco">R$ 31,90</span>
+  </div>
+</div>
+
+<!-- PRODUTO 6 - Big Chico -->
+<div class="card_produto"
+  onclick="abrirDetalhes('Big Chico', 'O top de linha da casa. Pulled beef desfiado lentamente por 8h, cebola caramelizada, mix de folhas verdes e molho barbecue defumado no pão de gergelim artesanal.', 'R$ 45,90', '../assets/images/big-chico.jpg')">
+  <img src="../assets/images/big-chico.jpg" alt="Big Chico" class="card_img" />
+  <div class="card_info">
+    <h2>Big Chico</h2>
+    <p class="descricao">Pulled beef desfiado por 8h, cebola caramelizada, mix de folhas e molho barbecue.</p>
+    <span class="preco">R$ 45,90</span>
+  </div>
+</div>
+
+      <!--  POPUP DE DETALHES  -->
+      <div id="popupDetalhes" class="popup_overlay">
+        <div class="popup_content">
+          <button class="popup_close" id="popupClose">&times;</button>
+          <img id="popup-img" src="" alt="" class="popup_img" />
+          <h1 id="popup-nome">Nome do Produto</h1>
+          <p id="popup-descricao">Descrição completa do produto</p>
+          <span id="popup-preco" class="popup_preco">R$ 0,00</span>
+          <a href="pedidos.html" class="btn_popup">Fazer Pedido</a>
+        </div>
+      </div>
+    </main>
+
+    <!--  FAQ  -->
+    <section class="faq_section">
+      <h2 class="title_default">Perguntas Frequentes</h2>
+      <p class="subtitle_default">Tire suas dúvidas</p>
+
+      <div class="faq_container">
+        <div class="faq_item">
+          <button class="faq_question">
+            Os hambúrgueres podem ser personalizados?
+            <span class="faq_icon">+</span>
+          </button>
+          <div class="faq_answer">
+            <p>
+              Sim! Você pode remover ingredientes ou adicionar extras como
+              bacon, queijo, ovo e cebola caramelizada.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq_item">
+          <button class="faq_question">
+            Acompanha batata frita? <span class="faq_icon">+</span>
+          </button>
+          <div class="faq_answer">
+            <p>
+              Nossos burguers vêm sozinhos, mas oferecemos combos com batata
+              frita rústica e bebida com desconto especial.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq_item">
+          <button class="faq_question">
+            Qual o ponto da carne servido? <span class="faq_icon">+</span>
+          </button>
+          <div class="faq_answer">
+            <p>
+              Servimos no ponto ao gosto: ao ponto, ao ponto para mais, bem
+              passado. Basta nos avisar no pedido!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  FOOTER  -->
+    <footer>
+      <div class="footer_content">
+        <div class="footer_col">
+          <h3 class="title_footer">Chico's Burguer</h3>
+          <p class="footer_text">
+            Hamburgueria gourmet em Santo André/SP. <br />
+            Sabor artesanal desde 2015.
+          </p>
+        </div>
+
+        <div class="footer_col">
+          <h3 class="title_footer">Contato</h3>
+          <ul class="contatos">
+            <li>
+              <i class="fa fa-whatsapp"></i>
+              <a href="https://wa.me/5511999999999">(11) 99999-9999</a>
+            </li>
+            <li>
+              <i class="fa fa-envelope"></i>
+              <a href="mailto:contato@chicosburguer.com.br"
+                >contato@chicosburguer.com.br</a
+              >
+            </li>
+            <li>
+              <i class="fa fa-instagram"></i>
+              <a href="https://instagram.com/chicosburguer">@chicosburguer</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer_col">
+          <h3 class="title_footer">Mais Informações</h3>
+          <ul class="contatos">
+            <li><i class="fa fa-map-marker"></i> Av. dos Sabores, 1000</li>
+            <li><i class="fa fa-clock-o"></i> Seg a Dom - 18h às 23h</li>
+            <li>
+              <a href="contato.html"
+                ><i class="fa fa-paper-plane"></i> Fale conosco</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer_bottom">
+        <p>
+          © 2026 Chico's Burguer - Hamburgueria Gourmet. Todos os direitos
+          reservados.
+        </p>
+      </div>
+    </footer>
+
+    <script src="../assets/js/base.js"></script>
+    <script src="../assets/js/faq.js"></script>
+    <script src="../assets/js/produtos.js"></script>
+  </body>
+</html>

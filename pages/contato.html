@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato | Chico's Burguer</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/contato.css" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="../assets/images/logo.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--  TOP BAR  -->
+    <div class="top_bar">
+      <div class="top_bar_content">
+        <span><i class="fa fa-phone"></i> (11) 99999-9999</span>
+        <span><i class="fa fa-clock-o"></i> Seg a Dom: 18h às 23h</span>
+        <span
+          ><i class="fa fa-map-marker"></i> Av. dos Sabores, 1000 - Santo
+          André/SP</span
+        >
+      </div>
+    </div>
+
+    <!--  HEADER / NAV  -->
+    <header>
+      <div class="divHeader">
+        <a href="../index.html">
+          <img
+            src="../assets/images/logo.png"
+            alt="Chico's Burguer"
+            title="Chico's Burguer"
+            class="logo"
+          />
+        </a>
+        <button id="hamburger" class="hamburger" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav id="mainNav">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="contato.html" class="active">Contato</a></li>
+            <li><a href="pedidos.html">Pedidos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <h1 class="title_default">Fale com a Gente</h1>
+      <p class="subtitle_default">
+        Sua opinião é o nosso tempero secreto <br />
+        Mande sua mensagem que respondemos rapidinho!
+      </p>
+
+      <form id="frmContato" class="form_contato">
+        <fieldset>
+          <legend class="texto">Dados Pessoais</legend>
+
+          <div class="form_row">
+            <div class="form_field">
+              <label class="sub_texto" for="nomesobrenome"
+                >* Nome e sobrenome</label
+              >
+              <input
+                class="inputs input-padrao"
+                type="text"
+                id="nomesobrenome"
+                name="nomesobrenome"
+                required
+                placeholder="Digite seu nome completo"
+              />
+            </div>
+
+            <div class="form_field">
+              <label class="sub_texto" for="email">* E-mail</label>
+              <input
+                class="inputs input-padrao"
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="seu@email.com"
+              />
+            </div>
+          </div>
+
+          <div class="form_row">
+            <div class="form_field">
+              <label class="sub_texto" for="telefone">Telefone</label>
+              <input
+                class="inputs input-padrao"
+                type="tel"
+                id="telefone"
+                name="telefone"
+                placeholder="(XX) XXXXX-XXXX"
+              />
+            </div>
+
+            <div class="form_field">
+              <label class="sub_texto" for="motivo">Motivo do contato</label>
+              <select id="motivo" name="motivo" class="inputs input-padrao">
+                <option value="">Selecione</option>
+                <option value="duvida">Dúvida</option>
+                <option value="sugestao">Sugestão</option>
+                <option value="elogio">Elogio</option>
+                <option value="reclamacao">Reclamação</option>
+                <option value="reserva">Reserva de mesa</option>
+                <option value="eventos">Eventos / Festas</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend class="texto">Sua Mensagem</legend>
+
+          <label class="sub_texto" for="mensagem">* Mensagem</label>
+          <textarea
+            cols="70"
+            rows="8"
+            id="mensagem"
+            name="mensagem"
+            class="input-padrao inputs"
+            required
+            placeholder="Conte para a gente o que você gostaria de falar..."
+          ></textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend class="texto">Preferências</legend>
+
+          <div class="radio_group">
+            <p class="sub_texto">Como prefere o nosso contato?</p>
+            <label class="radio_label">
+              <input type="radio" value="email" name="contato" /> E-mail
+            </label>
+            <label class="radio_label">
+              <input type="radio" value="telefone" name="contato" /> Telefone
+            </label>
+            <label class="radio_label">
+              <input type="radio" value="whatsapp" name="contato" checked />
+              Whatsapp
+            </label>
+          </div>
+
+          <div class="satisfacao_group">
+            <p class="sub_texto">Como você avalia o nosso atendimento?</p>
+            <div class="stars">
+              <input
+                type="radio"
+                name="satisfacao"
+                id="star5"
+                value="5"
+              /><label for="star5" title="Excelente">★</label>
+              <input
+                type="radio"
+                name="satisfacao"
+                id="star4"
+                value="4"
+              /><label for="star4" title="Muito bom">★</label>
+              <input
+                type="radio"
+                name="satisfacao"
+                id="star3"
+                value="3"
+                checked
+              /><label for="star3" title="Bom">★</label>
+              <input
+                type="radio"
+                name="satisfacao"
+                id="star2"
+                value="2"
+              /><label for="star2" title="Regular">★</label>
+              <input
+                type="radio"
+                name="satisfacao"
+                id="star1"
+                value="1"
+              /><label for="star1" title="Ruim">★</label>
+            </div>
+          </div>
+
+          <label class="texto chk_label">
+            <input type="checkbox" class="chk" /> Gostaria de receber novidades
+            e promoções por e-mail
+          </label>
+        </fieldset>
+
+        <button type="submit" id="enviar" class="enviar">
+          Enviar Mensagem
+        </button>
+      </form>
+    </main>
+
+    <!--  FAQ  -->
+    <section class="faq_section">
+      <h2 class="title_default">Perguntas Frequentes</h2>
+      <p class="subtitle_default">Tire suas dúvidas</p>
+
+      <div class="faq_container">
+        <div class="faq_item">
+          <button class="faq_question">
+            Qual o prazo de resposta? <span class="faq_icon">+</span>
+          </button>
+          <div class="faq_answer">
+            <p>
+              Respondemos a maioria das mensagens em até 24 horas úteis. Para
+              urgências, prefira o WhatsApp.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq_item">
+          <button class="faq_question">
+            Como faço uma reserva? <span class="faq_icon">+</span>
+          </button>
+          <div class="faq_answer">
+            <p>
+              Você pode reservar pelo formulário acima (motivo: Reserva de mesa)
+              ou diretamente pelo nosso WhatsApp.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq_item">
+          <button class="faq_question">
+            Posso fazer eventos no local? <span class="faq_icon">+</span>
+          </button>
+          <div class="faq_answer">
+            <p>
+              Sim! Temos um espaço reservado para confraternizações e festas de
+              aniversário. Entre em contato para orçamento.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  FOOTER  -->
+    <footer>
+      <div class="footer_content">
+        <div class="footer_col">
+          <h3 class="title_footer">Chico's Burguer</h3>
+          <p class="footer_text">
+            Hamburgueria gourmet em Santo André/SP. <br />
+            Sabor artesanal desde 2015.
+          </p>
+        </div>
+
+        <div class="footer_col">
+          <h3 class="title_footer">Contato</h3>
+          <ul class="contatos">
+            <li>
+              <i class="fa fa-whatsapp"></i>
+              <a href="https://wa.me/5511999999999">(11) 99999-9999</a>
+            </li>
+            <li>
+              <i class="fa fa-envelope"></i>
+              <a href="mailto:contato@chicosburguer.com.br"
+                >contato@chicosburguer.com.br</a
+              >
+            </li>
+            <li>
+              <i class="fa fa-instagram"></i>
+              <a href="https://instagram.com/chicosburguer">@chicosburguer</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer_col">
+          <h3 class="title_footer">Mais Informações</h3>
+          <ul class="contatos">
+            <li><i class="fa fa-map-marker"></i> Av. dos Sabores, 1000</li>
+            <li><i class="fa fa-clock-o"></i> Seg a Dom - 18h às 23h</li>
+            <li>
+              <a href="contato.html"
+                ><i class="fa fa-paper-plane"></i> Fale conosco</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer_bottom">
+        <p>
+          © 2026 Chico's Burguer - Hamburgueria Gourmet. Todos os direitos
+          reservados.
+        </p>
+      </div>
+    </footer>
+
+    <script src="../assets/js/base.js"></script>
+    <script src="../assets/js/faq.js"></script>
+    <script src="../assets/js/contato.js"></script>
+  </body>
+</html>

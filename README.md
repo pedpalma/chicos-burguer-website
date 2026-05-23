@@ -5,10 +5,10 @@ Site institucional da hamburgueria gourmet **Chico's Burguer**, com 4 páginas (
 ## 🎨 Identidade Visual
 
 - **Paleta de cores**: marrom claro/bege com tons de marrom alaranjado e escuro
-  - `#FFF5E6` - fundo bege claro
-  - `#3B1F0E` - marrom escuro (header / footer)
-  - `#C97B3A` - marrom alaranjado (destaques)
-  - `#8B5A2B` - marrom médio (texto)
+  - `#FFF5E6` : fundo bege claro
+  - `#3B1F0E` : marrom escuro (header / footer)
+  - `#C97B3A` : marrom alaranjado (destaques)
+  - `#8B5A2B` : marrom médio (texto)
 - **Fontes**: Cormorant Garamond (display/títulos), Playfair Display (subtítulos), Lora (corpo)
 - **Estilo**: Sofisticado, gourmet, visualmente confortável e levemente apelativo, inspirado no [domrestaurante.com.br](https://domrestaurante.com.br)
 
@@ -82,13 +82,6 @@ chicos-burguer/
 - Formulário para adicionar novo pedido (seleção auto-preenche preço)
 - **Duplo clique** em uma linha para excluí-la
 
-## 🖼️ Imagens (substituir os placeholders)
-
-Todos os espaços de imagem estão sinalizados com:
-
-- Comentário HTML chamativo: `<!-- IMAGEM AQUI: ... -->`
-- Placeholder visual com texto "imagem aqui"
-
 Locais onde adicionar imagens:
 
 1. **Logo** (em todas as páginas) → `assets/images/logo-image.png`
@@ -97,20 +90,11 @@ Locais onde adicionar imagens:
 4. **6 fotos dos produtos** (produtos) → 500x300
 5. **Imagem do popup** (produtos) → 450x300
 
-## 🚀 Como Usar
-
-Basta abrir o `index.html` em qualquer navegador moderno. Nenhuma build é necessária.
-
-```bash
-# Servidor local (opcional)
-python3 -m http.server 8000
-# Acesse: http://localhost:8000
 ```
 
 ## 📱 Responsividade
 
 Layout totalmente responsivo, testado em:
-
 - Desktop (1920px+, 1366px, 1024px)
 - Tablet (768px)
 - Mobile (480px, 360px)
@@ -120,3 +104,4 @@ O menu hamburger aparece automaticamente em telas ≤ 768px.
 ---
 
 © 2026 Chico's Burguer - Hamburgueria Gourmet. Todos os direitos reservados.
+```

@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chico's Burguer - Hamburgueria Gourmet</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="./assets/images/logo.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- TOP BAR -->
+    <div class="top_bar">
+      <div class="top_bar_content">
+        <span><i class="fa fa-phone"></i> (11) 99999-9999</span>
+        <span><i class="fa fa-clock-o"></i> Seg a Dom: 18h às 23h</span>
+        <span
+          ><i class="fa fa-map-marker"></i> Av. dos Sabores, 1000 - Santo
+          André/SP</span
+        >
+      </div>
+    </div>
+
+    <!-- HEADER / NAV -->
+    <header>
+      <div class="divHeader">
+        <a href="index.html">
+          <img
+            src="./assets/images/logo.png"
+            alt="Chico's Burguer"
+            title="Chico's Burguer"
+            class="logo"
+          />
+        </a>
+
+        <button id="hamburger" class="hamburger" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav id="mainNav">
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="./pages/produtos.html">Produtos</a></li>
+            <li><a href="./pages/contato.html">Contato</a></li>
+            <li><a href="./pages/pedidos.html">Pedidos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO COM SLIDER -->
+    <section class="hero_slider">
+      <div class="slides">
+        <!-- BANNER 1 - GRELHA NO FOGO -->
+        <div class="slide active">
+          <img src="./assets/images/banner1.png" alt="Hambúrguer artesanal na grelha" class="slide-img" />
+          <div class="slide-content">
+            <h1>Chico's <span>Burguer</span></h1>
+            <p>O sabor artesanal que conquista a cada mordida</p>
+            <a href="./pages/produtos.html" class="btn_hero">Ver Cardápio</a>
+          </div>
+        </div>
+        
+        <!-- BANNER 2 - BURGUER + CERVEJA NO AMBIENTE -->
+        <div class="slide">
+          <img src="./assets/images/banner2.png" alt="Burguer artesanal com cerveja" class="slide-img" />
+          <div class="slide-content">
+            <h1>Ingredientes <span>selecionados</span></h1>
+            <p>Carne 100% bovina, pães frescos e molhos da casa</p>
+            <a href="./pages/produtos.html" class="btn_hero">Conheça Mais</a>
+          </div>
+        </div>
+        
+        <!-- BANNER 3 - "VEM PRO CHICO'S" -->
+        <div class="slide">
+          <img src="./assets/images/banner3.png" alt="Vem pro Chico's - O autêntico burguer artesanal" class="slide-img" />
+          <div class="slide-content">
+            <h1>Tradição <span>e sabor</span></h1>
+            <p>Uma experiência gourmet que você vai querer repetir</p>
+            <a href="./pages/pedidos.html" class="btn_hero">Faça seu Pedido</a>
+          </div>
+        </div>
+
+      <button class="slider-btn prev" id="prevSlide">&#10094;</button>
+      <button class="slider-btn next" id="nextSlide">&#10095;</button>
+
+      <div class="slider-dots">
+        <span class="dot active" data-slide="0"></span>
+        <span class="dot" data-slide="1"></span>
+        <span class="dot" data-slide="2"></span>
+      </div>
+    </section>
+
+    <main>
+      <!-- SOBRE NÓS -->
+      <section class="about_us">
+        <h2 class="title_default">Sobre Nós</h2>
+        <p class="subtitle_default">Conheça a nossa história</p>
+        <p class="p_about_us">
+          Bem-vindo ao <b><i>Chico's Burguer</i></b
+          >! Mais do que uma hamburgueria, somos um ponto de encontro de quem
+          ama um lanche feito com carinho e ingredientes selecionados. Cada
+          burguer que sai da nossa cozinha carrega anos de pesquisa, técnica e
+          paixão pelo sabor de verdade. <br /><br />
+          Nascido do sonho do Chico em transformar a tradicional hamburgueria de
+          bairro em uma experiência gourmet acessível, nosso cardápio combina
+          carnes nobres maturadas, pães artesanais assados diariamente e molhos
+          exclusivos preparados na casa.
+          <br /><br />
+          No <b><i>Chico's Burguer</i></b
+          >, cada detalhe é pensado para que sua refeição seja inesquecível.
+          Venha provar e descobrir por que somos a hamburgueria favorita da
+          cidade!
+        </p>
+      </section>
+
+      <!-- ONDE NOS ENCONTRAR -->
+      <section class="our_establishment">
+        <h2 class="title_default">Onde Nos Encontrar</h2>
+        <p class="subtitle_default">Venha nos visitar</p>
+        <div class="map_location">
+          <iframe
+            class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29275.05608086846!2d-46.5470989!3d-23.6638089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce42b1cd9f9c1d%3A0x0!2sSanto%20Andr%C3%A9%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr"
+            width="900"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+      </section>
+
+      <!-- VÍDEO YOUTUBE -->
+      <section class="video_section">
+        <h2 class="title_default">Nossa História em Vídeo</h2>
+        <p class="subtitle_default">Conheça os bastidores do Chico's</p>
+        <div class="video">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/IS1XHAJVURI?si=Zw_3vuFik3bgBlNR"
+            title="YouTube video player"
+            frameborder="0"
+            allow="
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+              web-share;
+            "
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            style="border-radius: 25px"
+          >
+          </iframe>
+        </div>
+      </section>
+    </main>
+
+    <!-- FAQ -->
+    <section class="faq_section">
+      <h2 class="title_default">Perguntas Frequentes</h2>
+      <p class="subtitle_default">Tire suas dúvidas</p>
+
+      <div class="faq_container">
+        <div class="faq_item">
+          <button class="faq_question">
+            Qual o horário de funcionamento? <span class="faq_icon">+</span>
+          </button>
+          <div class="faq_answer">
+            <p>
+              Atendemos de segunda a domingo, das 18h às 23h. Nos finais de
+              semana podemos estender até 00h.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq_item">
+          <button class="faq_question">
+            Vocês trabalham com delivery? <span class="faq_icon">+</span>
+          </button>
+          <div class="faq_answer">
+            <p>
+              Sim! Atendemos delivery em toda a região do ABC paulista pelos
+              principais aplicativos e também por WhatsApp.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq_item">
+          <button class="faq_question">
+            A carne é fresca? Qual o tipo utilizado?
+            <span class="faq_icon">+</span>
+          </button>
+          <div class="faq_answer">
+            <p>
+              Trabalhamos com blend exclusivo de carnes nobres (acém, fraldinha
+              e peito), moído diariamente. Nada de congelados!
+            </p>
+          </div>
+        </div>
+
+        <div class="faq_item">
+          <button class="faq_question">
+            Têm opções vegetarianas? <span class="faq_icon">+</span>
+          </button>
+          <div class="faq_answer">
+            <p>
+              Claro! Temos um delicioso burguer vegetariano feito com
+              grão-de-bico e cogumelos, além de opções sem glúten.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq_item">
+          <button class="faq_question">
+            Posso reservar uma mesa? <span class="faq_icon">+</span>
+          </button>
+          <div class="faq_answer">
+            <p>
+              Sim, reservas podem ser feitas pelo WhatsApp ou pelo nosso
+              telefone com até 24h de antecedência.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer_content">
+        <div class="footer_col">
+          <h3 class="title_footer">Chico's Burguer</h3>
+          <p class="footer_text">
+            Hamburgueria gourmet em Santo André/SP. <br />
+            Sabor artesanal desde 2015.
+          </p>
+        </div>
+
+        <div class="footer_col">
+          <h3 class="title_footer">Contato</h3>
+          <ul class="contatos">
+            <li>
+              <i class="fa fa-whatsapp"></i>
+              <a href="https://wa.me/5511999999999">(11) 99999-9999</a>
+            </li>
+            <li>
+              <i class="fa fa-envelope"></i>
+              <a href="mailto:contato@chicosburguer.com.br"
+                >contato@chicosburguer.com.br</a
+              >
+            </li>
+            <li>
+              <i class="fa fa-instagram"></i>
+              <a href="https://instagram.com/chicosburguer">@chicosburguer</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer_col">
+          <h3 class="title_footer">Mais Informações</h3>
+          <ul class="contatos">
+            <li><i class="fa fa-map-marker"></i> Av. dos Sabores, 1000</li>
+            <li><i class="fa fa-clock-o"></i> Seg a Dom - 18h às 23h</li>
+            <li>
+              <a href="./pages/contato.html"
+                ><i class="fa fa-paper-plane"></i> Fale conosco</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer_bottom">
+        <p>
+          © 2026 Chico's Burguer - Hamburgueria Gourmet. Todos os direitos
+          reservados.
+        </p>
+      </div>
+    </footer>
+
+    <script src="./assets/js/base.js"></script>
+    <script src="./assets/js/slider.js"></script>
+    <script src="./assets/js/faq.js"></script>
+  </body>
+</html>

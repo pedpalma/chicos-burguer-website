@@ -1,0 +1,239 @@
+/* CHICO'S BURGUER - CONTATO PAGE */
+
+main {
+  padding-top: 30px;
+}
+
+.form_contato {
+  max-width: 900px;
+  margin: 20px auto 60px;
+  padding: 0 30px;
+}
+
+fieldset {
+  background-color: var(--white);
+  border-radius: 18px;
+  padding: 25px 30px 30px;
+  margin-bottom: 25px;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid var(--brown-light);
+}
+
+legend.texto {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: bold;
+  color: var(--brown-dark);
+  font-size: 22pt;
+  padding: 0 14px;
+  background-color: var(--bg-cream);
+  border-radius: 8px;
+  border: 1px solid var(--brown-orange);
+}
+
+.sub_texto {
+  font-family: var(--font-body);
+  color: var(--brown-medium);
+  font-size: 13pt;
+  margin-bottom: 8px;
+  display: block;
+  font-weight: 600;
+}
+
+.texto {
+  font-family: var(--font-body);
+  color: var(--brown-dark);
+  font-size: 14pt;
+}
+
+/*  FORM LAYOUT  */
+.form_row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.form_field {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs {
+  font-family: var(--font-body);
+  font-size: 13pt;
+  color: var(--brown-dark);
+  background-color: var(--bg-cream);
+  border: 1.5px solid var(--brown-light);
+  border-radius: 10px;
+  padding: 12px 16px;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.inputs:focus {
+  outline: none;
+  border-color: var(--brown-orange);
+  background-color: var(--white);
+  box-shadow: 0 0 0 3px rgba(201, 123, 58, 0.2);
+}
+
+textarea.inputs {
+  resize: vertical;
+  min-height: 130px;
+  width: 100%;
+}
+
+select.inputs {
+  cursor: pointer;
+}
+
+.input-padrao {
+  margin: 0 0 5px;
+}
+
+/*  RADIO GROUP  */
+.radio_group {
+  margin: 15px 0 20px;
+}
+
+.radio_group .sub_texto {
+  margin-bottom: 12px;
+}
+
+.radio_label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: 25px;
+  font-family: var(--font-body);
+  font-size: 13pt;
+  color: var(--brown-dark);
+  cursor: pointer;
+  padding: 6px 14px;
+  border-radius: 50px;
+  border: 1.5px solid var(--brown-light);
+  background-color: var(--bg-cream);
+  transition: all 0.3s ease;
+}
+
+.radio_label:hover {
+  border-color: var(--brown-orange);
+  background-color: var(--white);
+}
+
+.radio_label input[type="radio"] {
+  accent-color: var(--brown-orange);
+  cursor: pointer;
+}
+
+/*  STARS RATING  */
+.satisfacao_group {
+  margin: 20px 0;
+}
+
+.satisfacao_group .sub_texto {
+  margin-bottom: 8px;
+}
+
+.stars {
+  display: inline-flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  gap: 4px;
+}
+
+.stars input {
+  display: none;
+}
+
+.stars label {
+  font-size: 32pt;
+  color: var(--brown-light);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.stars label:hover,
+.stars label:hover ~ label,
+.stars input:checked ~ label {
+  color: var(--brown-orange);
+  transform: scale(1.1);
+}
+
+/*  CHECKBOX  */
+.chk_label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+  font-size: 13pt;
+  cursor: pointer;
+}
+
+.chk {
+  accent-color: var(--brown-orange);
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+/*  BOTÃO ENVIAR  */
+.enviar {
+  display: block;
+  margin: 25px auto 0;
+  padding: 14px 50px;
+  background-color: var(--brown-orange);
+  color: var(--white);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 18pt;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 18px rgba(201, 123, 58, 0.4);
+}
+
+.enviar:hover {
+  background-color: var(--brown-orange-2);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(176, 94, 31, 0.5);
+}
+
+.enviar:active {
+  transform: translateY(-1px);
+}
+
+/*  RESPONSIVO  */
+@media (max-width: 768px) {
+  .form_row {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  fieldset {
+    padding: 18px 18px 22px;
+  }
+
+  legend.texto {
+    font-size: 16pt;
+  }
+
+  .radio_label {
+    display: flex;
+    margin: 6px 0;
+    width: fit-content;
+  }
+
+  .stars label {
+    font-size: 26pt;
+  }
+
+  .enviar {
+    font-size: 15pt;
+    padding: 12px 38px;
+  }
+}
