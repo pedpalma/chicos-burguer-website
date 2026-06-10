@@ -1,8 +1,12 @@
-# 🍔 Chico's Burguer - Hamburgueria Gourmet
+<h1 align="center"> Chico's Burguer - Hamburgueria Gourmet</h1>
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 
 Site institucional da hamburgueria gourmet **Chico's Burguer**, com 4 páginas (Home, Produtos, Contato e Pedidos), construído em **HTML + CSS + JavaScript** puro.
 
-## 🎨 Identidade Visual
+##  Identidade Visual
 
 - **Paleta de cores**: marrom claro/bege com tons de marrom alaranjado e escuro
   - `#FFF5E6` : fundo bege claro
@@ -12,7 +16,7 @@ Site institucional da hamburgueria gourmet **Chico's Burguer**, com 4 páginas (
 - **Fontes**: Cormorant Garamond (display/títulos), Playfair Display (subtítulos), Lora (corpo)
 - **Estilo**: Sofisticado, gourmet, visualmente confortável e levemente apelativo, inspirado no [domrestaurante.com.br](https://domrestaurante.com.br)
 
-## 📁 Estrutura de Arquivos
+## Estrutura de Arquivos
 
 ```
 chicos-burguer/
@@ -41,7 +45,7 @@ chicos-burguer/
     └── images/                 → Coloque aqui suas imagens
 ```
 
-## 🧱 Componentes Comuns (Base Top / Base Bottom)
+## Componentes Comuns (Base Top / Base Bottom)
 
 ### Base Top (em todas as páginas)
 
@@ -54,28 +58,28 @@ chicos-burguer/
 - **Footer** com 3 colunas: marca, contato e mais informações
 - Direitos reservados
 
-## 📄 Páginas
+## Páginas
 
-### 🏠 Home (`index.html`)
+### Home (`index.html`)
 
 - Hero com slider automático (3 slides, 6s cada)
 - Seção "Sobre Nós"
 - Mapa Google "Onde nos encontrar"
 - Vídeo do YouTube institucional
 
-### 🍔 Produtos (`pages/produtos.html`)
+### Produtos (`pages/produtos.html`)
 
 - Grid de 6 cards de hambúrgueres com nome, descrição e preço
 - Clique no card abre **popup modal** com detalhes completos
 
-### 📞 Contato (`pages/contato.html`)
+### Contato (`pages/contato.html`)
 
 - Formulário completo com: nome, e-mail, telefone, motivo, mensagem
 - Radio button para preferência de contato
 - Sistema de avaliação por estrelas
 - Checkbox de newsletter
 
-### 📋 Pedidos (`pages/pedidos.html`)
+### Pedidos (`pages/pedidos.html`)
 
 - Tabela com 6 pedidos pré-cadastrados (hardcoded)
 - Campo de busca por nome do cliente
@@ -92,7 +96,7 @@ Locais onde adicionar imagens:
 
 ```
 
-## 📱 Responsividade
+## Responsividade
 
 Layout totalmente responsivo, testado em:
 - Desktop (1920px+, 1366px, 1024px)
